@@ -25,6 +25,6 @@ string Square::getShapeType()
     return "Square";
 }
 
-void test() {
+void testing() {
     
 }
