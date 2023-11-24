@@ -1,5 +1,6 @@
 #include "ShapesList.h"
 
+using std::fixed, std::setprecision;
 using std::cout;
 
 ShapesList::ShapesList(vector<shared_ptr<Shape>> shapes, StringConverter converter)
@@ -44,9 +45,10 @@ void ShapesList::printShapeWithCalculated()
         cout << "| " << i + 1 << " | ";
         shared_ptr<ShapeToStringConvert> converter = _converter.converterType(_shapes[i]->getShapeType());
 
-        if (converter == nullptr)
+        if (converter != nullptr)
         {
-            cout << _shapes[i]->getShapeType() << " " << _shapes[i]->perimeter() << " " << _shapes[i]->area() << "\n";
+            cout << _shapes[i]->getShapeType() << " " << fixed << setprecision(1) << _shapes[i]->perimeter() 
+                << " " << fixed << setprecision(2) << _shapes[i]->area() << "\n";
             continue;
         }
 

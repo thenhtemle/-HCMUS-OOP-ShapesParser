@@ -3,7 +3,7 @@
 #include <exception>
 #include <sstream>
 #include <string>
-#include "Windows.h"
+
 #include <memory>
 
 using std::string, std::stringstream;
@@ -18,7 +18,7 @@ public:
 	EmptyData(string message) : _message(message) {};
 	~EmptyData() = default;
 
-	string what() const throw();
+	string what() const noexcept;
 };
 
 
@@ -30,7 +30,7 @@ public:
 	IncorrectFormat(string message) : _message(message) {};
 	~IncorrectFormat() = default;
 
-	string what() const throw();
+	string what() const noexcept;
 };
 
 
@@ -42,5 +42,5 @@ public:
 	InvalidDataRange(string message) : _message(message) {};
 	~InvalidDataRange() = default;
 
-	string what() const throw();
+	string what() const noexcept;
 };

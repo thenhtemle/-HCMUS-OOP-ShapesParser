@@ -1,6 +1,6 @@
 #include "Exception.h"
 
-string EmptyData::what() const throw()
+string EmptyData::what() const noexcept
 {
     stringstream builder;
     builder << "[!] No Data Exception." << endl;
@@ -11,7 +11,7 @@ string EmptyData::what() const throw()
 }
 
 
-string IncorrectFormat::what() const throw()
+string IncorrectFormat::what() const noexcept
 {
     stringstream builder;
     builder << "[!] Incorrect format." << endl;
@@ -21,7 +21,7 @@ string IncorrectFormat::what() const throw()
     return builder.str();
 }
 
-string InvalidDataRange::what() const throw()
+string InvalidDataRange::what() const noexcept
 {
     stringstream builder;
     builder << "[!] Invalid data range." << endl;
