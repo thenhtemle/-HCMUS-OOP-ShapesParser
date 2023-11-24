@@ -130,6 +130,7 @@
   <ItemGroup>
     <ClCompile Include="Circle.cpp" />
     <ClCompile Include="CircleParser.cpp" />
+    <ClCompile Include="CircleToStringConvert.cpp" />
     <ClCompile Include="Exception.cpp" />
     <ClCompile Include="ParserFactory.cpp" />
     <ClCompile Include="Rectangle.cpp" />
@@ -143,6 +144,7 @@
   <ItemGroup>
     <ClInclude Include="Circle.h" />
     <ClInclude Include="CircleParser.h" />
+    <ClInclude Include="CircleToStringConvert.h" />
     <ClInclude Include="Exception.h" />
     <ClInclude Include="Parser.h" />
     <ClInclude Include="ParserFactory.h" />

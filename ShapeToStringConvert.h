@@ -1,5 +1,6 @@
 #pragma once
 
+#include <sstream>
 #include <iostream>
 #include <string>
 #include <iomanip>
@@ -9,8 +10,13 @@
 
 using std::string;
 using std::shared_ptr;
+using std::stringstream;
+using std::fixed, std::setprecision;
+using std::setw, std::left;
 
 class ShapeToStringConvert {
+protected:
+    int _space = 25;
 public:
     ShapeToStringConvert() = default;
 public:
