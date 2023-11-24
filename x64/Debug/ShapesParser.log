@@ -1,0 +1,26 @@
+﻿  Rectangle.cpp
+  RectangleParser.cpp
+C:\Users\Luu Thanh Thuy\source\repos\ProjectShapes\ShapesParser\RectangleParser.cpp(36,29): error C2672: 'make_shared': no matching overloaded function found
+  C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.38.33129\include\memory(2768,5):
+  could be 'enable_if<!std::is_array_v<_Ty0>,std::shared_ptr<_Ty>>::type std::make_shared(_Types &&...)'
+  	C:\Users\Luu Thanh Thuy\source\repos\ProjectShapes\ShapesParser\RectangleParser.cpp(36,41):
+  	'std::make_shared': invalid template argument for '_Ty', type expected
+  C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.38.33129\include\memory(2805,84):
+  or       'enable_if<std::is_unbounded_array_v<_Ty>,std::shared_ptr<_Ty>>::type std::make_shared(const size_t)'
+  	C:\Users\Luu Thanh Thuy\source\repos\ProjectShapes\ShapesParser\RectangleParser.cpp(36,41):
+  	'std::make_shared': invalid template argument for '_Ty', type expected
+  C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.38.33129\include\memory(2810,84):
+  or       'enable_if<std::is_unbounded_array_v<_Ty>,std::shared_ptr<_Ty>>::type std::make_shared(const size_t,const remove_extent<_Ty>::type &)'
+  	C:\Users\Luu Thanh Thuy\source\repos\ProjectShapes\ShapesParser\RectangleParser.cpp(36,41):
+  	'std::make_shared': invalid template argument for '_Ty', type expected
+  C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.38.33129\include\memory(2816,82):
+  or       'enable_if<std::is_bounded_array_v<_Ty0>,std::shared_ptr<_Ty>>::type std::make_shared(void)'
+  	C:\Users\Luu Thanh Thuy\source\repos\ProjectShapes\ShapesParser\RectangleParser.cpp(36,41):
+  	'std::make_shared': invalid template argument for '_Ty', type expected
+  C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.38.33129\include\memory(2825,82):
+  or       'enable_if<std::is_bounded_array_v<_Ty0>,std::shared_ptr<_Ty>>::type std::make_shared(const remove_extent<_Ty>::type &)'
+  	C:\Users\Luu Thanh Thuy\source\repos\ProjectShapes\ShapesParser\RectangleParser.cpp(36,41):
+  	'std::make_shared': invalid template argument for '_Ty', type expected
+  
+  SquareParser.cpp
+  Generating Code...

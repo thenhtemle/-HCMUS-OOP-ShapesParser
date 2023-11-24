@@ -2,7 +2,9 @@
 
 #include <iostream>
 #include <vector>
+#include <string>
 
+using std::string;
 using std::vector;
 
 class Shape {
@@ -11,5 +13,5 @@ public:
     virtual double perimeter() = 0;
     virtual double area() = 0;
 public:
-    virtual string getShapeType() { return "Shape"; };
+    virtual string getShapeType() = 0;
 };

@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,19 +129,29 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="Exception.cpp" />
     <ClCompile Include="ParserFactory.cpp" />
     <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="RectangleParser.cpp" />
+    <ClCompile Include="ShapesList.cpp" />
     <ClCompile Include="ShapesParser.cpp" />
     <ClCompile Include="Square.cpp" />
+    <ClCompile Include="SquareParser.cpp" />
+    <ClCompile Include="StringConverter.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h" />
+    <ClInclude Include="Exception.h" />
     <ClInclude Include="Parser.h" />
     <ClInclude Include="ParserFactory.h" />
     <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="RectangleParser.h" />
     <ClInclude Include="Shape.h" />
+    <ClInclude Include="ShapesList.h" />
     <ClInclude Include="ShapeToStringConvert.h" />
     <ClInclude Include="Square.h" />
+    <ClInclude Include="SquareParser.h" />
+    <ClInclude Include="StringConverter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

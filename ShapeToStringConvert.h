@@ -10,9 +10,9 @@
 using std::string;
 using std::shared_ptr;
 
-class ShapeToStringConverter {
+class ShapeToStringConvert {
 public:
-    ShapeToStringConverter() = default;
+    ShapeToStringConvert() = default;
 public:
     virtual string convertData(shared_ptr<Shape>) = 0;
     virtual string convertDataCalculated(shared_ptr<Shape>) = 0;

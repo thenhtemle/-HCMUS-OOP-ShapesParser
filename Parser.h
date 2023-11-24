@@ -12,6 +12,6 @@ using std::string, std::stringstream;
 
 class Parser {
 public:
-    virtual shared_ptr<Shape> parse(stringstream) = 0;
+    virtual shared_ptr<Shape> parser(string) = 0;
     string toString() { return "Parser"; }
 };

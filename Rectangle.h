@@ -2,10 +2,8 @@
 
 #include <iostream>
 #include <string>
-#include <exception>
 #include "Shape.h"
 
-using std::exception;
 using std::string;
 
 class Rectangle : public Shape {

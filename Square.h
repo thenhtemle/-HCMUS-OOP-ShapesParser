@@ -3,11 +3,10 @@
 #include <iostream>
 #include <string>
 #include <sstream>
-#include <exception>
 
+#include "Exception.h"
 #include "Shape.h"
 
-using std::exception;
 using std::stringstream;
 using std::string;
 
@@ -30,13 +29,13 @@ public:
     vector<double> getAttribute() override;
 
     /// <summary>
-    /// Caculate the perimeter of the square
+    /// Calculate the perimeter of the square
     /// </summary>
     /// <returns>The perimeter</returns>
     double perimeter() override;
 
     /// <summary>
-    /// Caculate the area of the square
+    /// Calculate the area of the square
     /// </summary>
     /// <returns>The area</returns>
     double area() override;
