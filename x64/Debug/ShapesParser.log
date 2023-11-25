@@ -1,20 +1,2 @@
-﻿  CircleParser.cpp
-  CircleToStringConvert.cpp
-  ParserFactory.cpp
-  RectangleParser.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.38.33129\include\memory(3465,35): error C2248: 'ParserFactory::ParserFactory': cannot access private member declared in class 'ParserFactory'
-  (compiling source file 'ParserFactory.cpp')
-  C:\Users\Luu Thanh Thuy\source\repos\ProjectShapes\ShapesParser\ParserFactory.h(15,5):
-  see declaration of 'ParserFactory::ParserFactory'
-  C:\Users\Luu Thanh Thuy\source\repos\ProjectShapes\ShapesParser\ParserFactory.h(11,7):
-  see declaration of 'ParserFactory'
-  C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.38.33129\include\memory(3465,35):
-  the template instantiation context (the oldest one first) is
-  	C:\Users\Luu Thanh Thuy\source\repos\ProjectShapes\ShapesParser\ParserFactory.cpp(22,26):
-  	see reference to function template instantiation 'std::unique_ptr<ParserFactory,std::default_delete<ParserFactory>> std::make_unique<ParserFactory,,0>(void)' being compiled
-  
-  ShapesList.cpp
-  ShapesParser.cpp
-  SquareParser.cpp
-  StringConverter.cpp
-  Generating Code...
+﻿  ShapesParser.cpp
+  ShapesParser.vcxproj -> C:\Users\Luu Thanh Thuy\source\repos\ProjectShapes\x64\Debug\ShapesParser.exe

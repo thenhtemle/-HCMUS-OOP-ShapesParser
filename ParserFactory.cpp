@@ -3,8 +3,7 @@
 #include "RectangleParser.h"
 #include "SquareParser.h"
 
-ParserFactory::ParserFactory()
-{
+ParserFactory::ParserFactory() {
     _prototype = {
         {"Circle", make_shared<CircleParser>()},
         {"Rectangle", make_shared<RectangleParser>()},
@@ -12,8 +11,7 @@ ParserFactory::ParserFactory()
     };
 }
 
-shared_ptr<Parser> ParserFactory::select(string type)
-{
+shared_ptr<Parser> ParserFactory::select(string type) {
     shared_ptr<Parser> parser = 0;
 
     if (_prototype.contains(type))

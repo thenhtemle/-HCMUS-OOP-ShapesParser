@@ -4,11 +4,11 @@
 shared_ptr<Shape> CircleParser::parser(string data)
 {
     if (data.empty()) {
-        throw EmptyData("Rectangle empty line!!");
+        throw new EmptyData("Rectangle empty line!!");
     }
 
     //Checking the valid format of the circle
-    regex circlePattern("( a=)\?([0-9]*[.])?[0-9]+");
+    regex circlePattern("( r=)\?([0-9]*[.])?[0-9]+");
     bool matched = regex_match(data, circlePattern);
 
     //Throw exception if unmatched

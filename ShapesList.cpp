@@ -15,9 +15,7 @@ void ShapesList::printShapeWithAttribute()
     {
         shared_ptr<ShapeToStringConvert> converter = _converter.converterType(_shapes[i]->getShapeType());
         if (converter == nullptr)
-        {
             continue;
-        }
         cout << i + 1 << ". " << converter->convertData(_shapes[i]) << "\n";
     }
 } 
@@ -45,12 +43,8 @@ void ShapesList::printShapeWithCalculated()
         cout << "| " << i + 1 << " | ";
         shared_ptr<ShapeToStringConvert> converter = _converter.converterType(_shapes[i]->getShapeType());
 
-        if (converter != nullptr)
-        {
-            cout << _shapes[i]->getShapeType() << " " << fixed << setprecision(1) << _shapes[i]->perimeter() 
-                << " " << fixed << setprecision(2) << _shapes[i]->area() << "\n";
+        if (converter == nullptr)
             continue;
-        }
 
         string info = converter->convertDataCalculated(_shapes[i]);
         cout << info << "\n";

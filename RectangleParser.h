@@ -11,32 +11,8 @@
 using std::shared_ptr, std::make_shared, std::regex;
 
 class RectangleParser : public Parser {
-private:
-    inline static shared_ptr<RectangleParser> _instance = 0;
-    RectangleParser() = default;
 public:
-	/// <summary>
-	/// Delete the copy func
-	/// </summary>
-	/// <param name="">CircleParser</param>
-	RectangleParser(const RectangleParser&) = delete;
-
-	/// <summary>
-	/// Delete the copy func
-	/// </summary>
-	/// <param name="">CircleParser</param>
-	void operator=(const RectangleParser&) = delete;
-
-	/// <summary>
-	/// Singleton
-	/// </summary>
-	/// <returns>Getting instance</returns>
-	static shared_ptr<RectangleParser> getInstance() {
-		if (_instance == 0) {
-			_instance.reset(new RectangleParser());
-		}
-		return _instance;
-	}
+    RectangleParser() = default;
 
     /// <summary>
     /// Parsing rectangle

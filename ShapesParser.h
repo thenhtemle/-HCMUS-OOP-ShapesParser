@@ -18,6 +18,7 @@
 #include "Exception.h"
 #include "ParserFactory.h"
 #include "ShapeToStringConvert.h"
+#include "ShapesTextProvider.h"
 
 using std::cin, std::cout, std::endl;
 using std::string;

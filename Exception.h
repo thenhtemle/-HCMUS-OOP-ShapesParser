@@ -10,8 +10,7 @@ using std::string, std::stringstream;
 using std::endl;
 
 
-class Exception
-{
+class Exception {
 protected:
 	string _message;
 

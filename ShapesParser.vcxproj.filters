@@ -51,6 +51,9 @@
     <ClCompile Include="CircleToStringConvert.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ShapesTextProvider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shape.h">
@@ -98,5 +101,11 @@
     <ClInclude Include="CircleToStringConvert.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ShapesTextProvider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="shapes.txt" />
   </ItemGroup>
 </Project>

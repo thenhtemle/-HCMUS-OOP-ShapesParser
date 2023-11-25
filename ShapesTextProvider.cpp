@@ -16,7 +16,6 @@ tuple<int, vector<shared_ptr<Shape>>> ShapesTextProvider::next() {
 	int expectedNumber = stoi(tmp);
 
 	const auto& factory = ParserFactory::getInstance();
-
 	
 	while (getline(f, tmp)) {
 		std::stringstream ss(tmp);

@@ -137,6 +137,7 @@
     <ClCompile Include="RectangleParser.cpp" />
     <ClCompile Include="ShapesList.cpp" />
     <ClCompile Include="ShapesParser.cpp" />
+    <ClCompile Include="ShapesTextProvider.cpp" />
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="SquareParser.cpp" />
     <ClCompile Include="StringConverter.cpp" />
@@ -146,6 +147,7 @@
     <ClInclude Include="CircleParser.h" />
     <ClInclude Include="CircleToStringConvert.h" />
     <ClInclude Include="Exception.h" />
+    <ClInclude Include="ShapesTextProvider.h" />
     <ClInclude Include="Parser.h" />
     <ClInclude Include="ParserFactory.h" />
     <ClInclude Include="Rectangle.h" />
@@ -157,6 +159,9 @@
     <ClInclude Include="Square.h" />
     <ClInclude Include="SquareParser.h" />
     <ClInclude Include="StringConverter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="shapes.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
