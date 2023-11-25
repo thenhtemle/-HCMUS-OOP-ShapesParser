@@ -10,36 +10,40 @@ using std::string, std::stringstream;
 using std::endl;
 
 
-class EmptyData {
-private:
+class Exception
+{
+protected:
 	string _message;
 
 public:
-	EmptyData(string message) : _message(message) {};
+	Exception(string message);
+	virtual ~Exception() = default;
+
+	virtual string what() const noexcept;
+};
+
+
+class EmptyData : public Exception {
+public:
+	EmptyData(string message) : Exception(message) {};
 	~EmptyData() = default;
 
 	string what() const noexcept;
 };
 
 
-class IncorrectFormat {
-private:
-	string _message;
-
+class IncorrectFormat : public Exception {
 public:
-	IncorrectFormat(string message) : _message(message) {};
+	IncorrectFormat(string message) : Exception(message) {};
 	~IncorrectFormat() = default;
 
 	string what() const noexcept;
 };
 
 
-class InvalidDataRange {
-private:
-	string _message;
-
+class InvalidDataRange : public Exception {
 public:
-	InvalidDataRange(string message) : _message(message) {};
+	InvalidDataRange(string message) : Exception(message) {};
 	~InvalidDataRange() = default;
 
 	string what() const noexcept;

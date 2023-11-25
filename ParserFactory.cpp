@@ -1,18 +1,32 @@
 #include "ParserFactory.h"
+#include "CircleParser.h"
+#include "RectangleParser.h"
+#include "SquareParser.h"
 
-ParserFactory::ParserFactory(string type, shared_ptr<Parser> parser)
+ParserFactory::ParserFactory()
 {
-    _prototype = { type, parser };
-} 
+    _prototype = {
+        {"Circle", make_shared<CircleParser>()},
+        {"Rectangle", make_shared<RectangleParser>()},
+        {"Square", make_shared<SquareParser>()},
+    };
+}
 
 shared_ptr<Parser> ParserFactory::select(string type)
 {
-    shared_ptr<Parser> parser = nullptr;
+    shared_ptr<Parser> parser = 0;
 
-    if (type == std::get<0>(_prototype))
+    if (_prototype.contains(type))
     {
-        parser = std::get<1>(_prototype);
+        parser = _prototype[type];
     }
 
     return parser;
+}
+
+const unique_ptr<ParserFactory>& ParserFactory::getInstance() {
+    if (_instance == 0) {
+        _instance = std::unique_ptr<ParserFactory>(new ParserFactory);
+    }
+    return _instance;
 }

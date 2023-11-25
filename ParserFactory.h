@@ -1,25 +1,38 @@
 #pragma once
 
 #include <tuple>
-
+#include <map>
 #include "Parser.h"
 
 using std::tuple;
+using std::unique_ptr;
+using std::map;
 
 class ParserFactory {
 private:
-    tuple<string, shared_ptr<Parser>> _prototype;
+    map<string, shared_ptr<Parser>> _prototype;
+    static inline unique_ptr<ParserFactory> _instance;
+    ParserFactory();
 public:
-    ParserFactory() = default;
 
     /// <summary>
-    /// Constructor the parser factory
+    /// Destructor the factory
     /// </summary>
-    /// <param name="">Type of shape</param>
-    /// <param name="">Pointer pointing to parser type equivalent to shape type</param>
-    ParserFactory(string, shared_ptr<Parser>);
-
     ~ParserFactory() = default;
+
+    /// <summary>
+    /// Delete the copy func
+    /// </summary>
+    /// <param name="">CircleParser</param>
+    ParserFactory(const ParserFactory&) = delete;
+
+    /// <summary>
+    /// Delete the copy func
+    /// </summary>
+    /// <param name="">CircleParser</param>
+    void operator=(const ParserFactory&) = delete;
+
+    static const unique_ptr<ParserFactory>& getInstance();
 public:
     /// <summary>
     /// Selecting the pointer pointing to parser type equivalent to shape type

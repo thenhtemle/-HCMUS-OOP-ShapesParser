@@ -1,5 +1,13 @@
 #include "Exception.h"
 
+
+Exception::Exception(string message) : _message(message) {};
+
+string Exception::what() const noexcept
+{
+    return _message;
+}
+
 string EmptyData::what() const noexcept
 {
     stringstream builder;

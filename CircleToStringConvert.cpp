@@ -11,11 +11,6 @@ string CircleToStringConvert::convertData(shared_ptr<Shape> ShapePointer) {
 string CircleToStringConvert::convertDataCalculated(shared_ptr<Shape> ShapePointer) {
 	stringstream builder;
 
-	stringstream buildRadius;
-	vector<double> attribute = ShapePointer->getAttribute(); 
-	buildRadius << "Radius=" << attribute[0];
-	string radius = buildRadius.str();
-
 	stringstream buildPerimeter;
 	buildPerimeter << "Perimeter = " << fixed << setprecision(1) << ShapePointer->perimeter();
 	string perimeter = buildPerimeter.str();
@@ -24,8 +19,7 @@ string CircleToStringConvert::convertDataCalculated(shared_ptr<Shape> ShapePoint
 	buildArea << "Area=" << fixed << setprecision(2) << ShapePointer->area();
 	string area = buildArea.str();
 
-	builder << setw(_space) << left << "Circle" << "| " << setw(_space) << left << radius << "| " << setw(_space) << left 
-		<< perimeter << "| " << setw(_space) << left << area << "|";
+	builder << setw(_space) << left << "Circle" << "| " << setw(_space) << left << perimeter << "| " << setw(_space) << left << area << "|";
 
 	return builder.str();
 }

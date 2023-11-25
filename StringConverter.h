@@ -4,14 +4,16 @@
 #include <tuple>
 #include <string>
 #include <memory>
+#include <map>
 
 #include "ShapeToStringConvert.h"
 
+using std::map;
 using std::string, std::tuple, std::shared_ptr;
 
 class StringConverter {
 private:
-    tuple<string, shared_ptr<ShapeToStringConvert>> _prototype;
+    map<string, shared_ptr<ShapeToStringConvert>> _prototype;
 public:
     StringConverter() = default;
     ~StringConverter() = default;

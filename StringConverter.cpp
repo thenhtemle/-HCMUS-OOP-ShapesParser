@@ -2,16 +2,16 @@
 
 StringConverter::StringConverter(string type, shared_ptr<ShapeToStringConvert> converter)
 {
-    _prototype = { type, converter };
+    _prototype.insert(std::make_pair(type, converter));
 }
 
 shared_ptr<ShapeToStringConvert> StringConverter::converterType(string type)
 {
     shared_ptr<ShapeToStringConvert> converter = nullptr;
 
-    if (type == std::get<0>(_prototype))
+    if (_prototype.contains(type))
     {
-        converter = std::get<1>(_prototype);
+        converter = _prototype[type];
     }
 
     return converter;

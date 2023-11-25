@@ -13,14 +13,14 @@ shared_ptr<Shape> CircleParser::parser(string data)
 
     //Throw exception if unmatched
     if (!matched) {
-        throw IncorrectFormat(data);
+        throw new IncorrectFormat(data);
     }
 
     //Convert the radius from string to double
     data = data.substr(data.find("=") + 1);
     double radius = stod(data);
 
-    if (radius <= 0) throw InvalidDataRange(data);
+    if (radius <= 0) throw new InvalidDataRange(data);
 
     //Constructor the circle from radius
     shared_ptr<Shape> res = std::make_shared<Circle>(radius);
