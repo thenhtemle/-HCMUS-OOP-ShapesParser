@@ -4,7 +4,7 @@
 #include "SquareParser.h"
 
 ParserFactory::ParserFactory() {
-    _prototype = {
+    _container = {
         {"Circle", make_shared<CircleParser>()},
         {"Rectangle", make_shared<RectangleParser>()},
         {"Square", make_shared<SquareParser>()},
@@ -14,9 +14,9 @@ ParserFactory::ParserFactory() {
 shared_ptr<Parser> ParserFactory::select(string type) {
     shared_ptr<Parser> parser = 0;
 
-    if (_prototype.contains(type))
+    if (_container.contains(type))
     {
-        parser = _prototype[type];
+        parser = _container[type];
     }
 
     return parser;

@@ -135,18 +135,21 @@
     <ClCompile Include="ParserFactory.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="RectangleParser.cpp" />
+    <ClCompile Include="RectangleToStringConvert.cpp" />
     <ClCompile Include="ShapesList.cpp" />
     <ClCompile Include="ShapesParser.cpp" />
     <ClCompile Include="ShapesTextProvider.cpp" />
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="SquareParser.cpp" />
-    <ClCompile Include="StringConverter.cpp" />
+    <ClCompile Include="SquareToStringConvert.cpp" />
+    <ClCompile Include="StringConverterStrategy.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h" />
     <ClInclude Include="CircleParser.h" />
     <ClInclude Include="CircleToStringConvert.h" />
     <ClInclude Include="Exception.h" />
+    <ClInclude Include="RectangleToStringConvert.h" />
     <ClInclude Include="ShapesTextProvider.h" />
     <ClInclude Include="Parser.h" />
     <ClInclude Include="ParserFactory.h" />
@@ -158,7 +161,8 @@
     <ClInclude Include="ShapeToStringConvert.h" />
     <ClInclude Include="Square.h" />
     <ClInclude Include="SquareParser.h" />
-    <ClInclude Include="StringConverter.h" />
+    <ClInclude Include="SquareToStringConvert.h" />
+    <ClInclude Include="StringConverterStrategy.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="shapes.txt" />

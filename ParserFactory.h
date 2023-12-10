@@ -10,7 +10,7 @@ using std::map;
 
 class ParserFactory {
 private:
-    map<string, shared_ptr<Parser>> _prototype;
+    map<string, shared_ptr<Parser>> _container;
     static inline unique_ptr<ParserFactory> _instance;
     ParserFactory();
 public:

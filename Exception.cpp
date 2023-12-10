@@ -18,7 +18,6 @@ string EmptyData::what() const noexcept
     return builder.str();
 }
 
-
 string IncorrectFormat::what() const noexcept
 {
     stringstream builder;

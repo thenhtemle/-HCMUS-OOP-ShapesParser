@@ -1,2 +1,8 @@
-﻿  ShapesParser.cpp
+﻿  CircleToStringConvert.cpp
+  RectangleToStringConvert.cpp
+  ShapesList.cpp
+  ShapesParser.cpp
+  SquareToStringConvert.cpp
+  StringConverterStrategy.cpp
+  Generating Code...
   ShapesParser.vcxproj -> C:\Users\Luu Thanh Thuy\source\repos\ProjectShapes\x64\Debug\ShapesParser.exe

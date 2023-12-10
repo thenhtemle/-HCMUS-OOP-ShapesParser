@@ -3,22 +3,22 @@
 using std::fixed, std::setprecision;
 using std::cout;
 
-ShapesList::ShapesList(vector<shared_ptr<Shape>> shapes, StringConverter converter)
+ShapesList::ShapesList(vector<shared_ptr<Shape>>& shapes, StringConverterStrategy& strategy)
 {
     _shapes = shapes;
-    _converter = converter;
+    _strategy = strategy;
 }
 
 void ShapesList::printShapeWithAttribute()
 {
     for (int i = 0; i < _shapes.size(); i++)
     {
-        shared_ptr<ShapeToStringConvert> converter = _converter.converterType(_shapes[i]->getShapeType());
+        shared_ptr<ShapeToStringConvert> converter = _strategy.setStrategy(_shapes[i]->getShapeType());
         if (converter == nullptr)
             continue;
         cout << i + 1 << ". " << converter->convertData(_shapes[i]) << "\n";
     }
-} 
+}
 
 void ShapesList::sortArea()
 {
@@ -41,7 +41,7 @@ void ShapesList::printShapeWithCalculated()
     for (int i = 0; i < _shapes.size(); i++)
     {
         cout << "| " << i + 1 << " | ";
-        shared_ptr<ShapeToStringConvert> converter = _converter.converterType(_shapes[i]->getShapeType());
+        shared_ptr<ShapeToStringConvert> converter = _strategy.setStrategy(_shapes[i]->getShapeType());
 
         if (converter == nullptr)
             continue;
