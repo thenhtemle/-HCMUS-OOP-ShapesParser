@@ -20,3 +20,9 @@ double Rectangle::area() {
 string Rectangle::getShapeType() {
     return "Rectangle";
 }
+
+void Rectangle::display() {
+    std::stringstream res;
+    res << "Width= " << _width << ", Height=" << _height;
+    std::cout << res.str();
+}

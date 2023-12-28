@@ -132,23 +132,32 @@
     <ClCompile Include="CircleParser.cpp" />
     <ClCompile Include="CircleToStringConvert.cpp" />
     <ClCompile Include="Exception.cpp" />
+    <ClCompile Include="Hexagon.cpp" />
+    <ClCompile Include="HexagonParser.cpp" />
+    <ClCompile Include="HexagonToStringConvert.cpp" />
     <ClCompile Include="ParserFactory.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="RectangleParser.cpp" />
     <ClCompile Include="RectangleToStringConvert.cpp" />
-    <ClCompile Include="ShapesList.cpp" />
+    <ClCompile Include="Display.cpp" />
     <ClCompile Include="ShapesParser.cpp" />
     <ClCompile Include="ShapesTextProvider.cpp" />
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="SquareParser.cpp" />
     <ClCompile Include="SquareToStringConvert.cpp" />
     <ClCompile Include="StringConverterStrategy.cpp" />
+    <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="TriangleParser.cpp" />
+    <ClCompile Include="TriangleToStringConvert.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h" />
     <ClInclude Include="CircleParser.h" />
     <ClInclude Include="CircleToStringConvert.h" />
     <ClInclude Include="Exception.h" />
+    <ClInclude Include="Hexagon.h" />
+    <ClInclude Include="HexagonParser.h" />
+    <ClInclude Include="HexagonToStringConvert.h" />
     <ClInclude Include="RectangleToStringConvert.h" />
     <ClInclude Include="ShapesTextProvider.h" />
     <ClInclude Include="Parser.h" />
@@ -156,13 +165,16 @@
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="RectangleParser.h" />
     <ClInclude Include="Shape.h" />
-    <ClInclude Include="ShapesList.h" />
+    <ClInclude Include="Display.h" />
     <ClInclude Include="ShapesParser.h" />
     <ClInclude Include="ShapeToStringConvert.h" />
     <ClInclude Include="Square.h" />
     <ClInclude Include="SquareParser.h" />
     <ClInclude Include="SquareToStringConvert.h" />
     <ClInclude Include="StringConverterStrategy.h" />
+    <ClInclude Include="Triangle.h" />
+    <ClInclude Include="TriangleParser.h" />
+    <ClInclude Include="TriangleToStringConvert.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="shapes.txt" />

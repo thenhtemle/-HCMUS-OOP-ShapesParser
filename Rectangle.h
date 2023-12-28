@@ -43,4 +43,9 @@ public:
 	/// </summary>
 	/// <returns>Shape Type</returns>
 	string getShapeType() override;
+
+	/// <summary>
+	/// Print the attributes
+	/// </summary>
+	void display() override;
 };

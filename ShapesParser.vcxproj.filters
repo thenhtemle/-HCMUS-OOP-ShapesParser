@@ -39,7 +39,7 @@
     <ClCompile Include="RectangleParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ShapesList.cpp">
+    <ClCompile Include="Display.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Exception.cpp">
@@ -58,6 +58,24 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="RectangleToStringConvert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Hexagon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HexagonToStringConvert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HexagonParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TriangleParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TriangleToStringConvert.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -83,7 +101,7 @@
     <ClInclude Include="ShapeToStringConvert.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ShapesList.h">
+    <ClInclude Include="Display.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StringConverterStrategy.h">
@@ -114,6 +132,24 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RectangleToStringConvert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hexagon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HexagonToStringConvert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HexagonParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TriangleParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TriangleToStringConvert.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

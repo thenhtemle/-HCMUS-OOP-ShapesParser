@@ -1,8 +1,8 @@
-﻿  CircleToStringConvert.cpp
-  RectangleToStringConvert.cpp
-  ShapesList.cpp
-  ShapesParser.cpp
-  SquareToStringConvert.cpp
-  StringConverterStrategy.cpp
+﻿  Circle.cpp
+  Hexagon.cpp
+  Rectangle.cpp
+  Square.cpp
+  Triangle.cpp
+C:\Users\Luu Thanh Thuy\source\repos\ProjectShapes\ShapesParser\Triangle.cpp(19,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   Generating Code...
   ShapesParser.vcxproj -> C:\Users\Luu Thanh Thuy\source\repos\ProjectShapes\x64\Debug\ShapesParser.exe

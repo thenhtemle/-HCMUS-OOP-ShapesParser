@@ -21,3 +21,9 @@ double Circle::area() {
 string Circle::getShapeType() {
 	return "Circle";
 }
+
+void Circle::display() {
+	std::stringstream res;
+	res << "Radius=" << _radius;
+	std::cout << res.str();
+}

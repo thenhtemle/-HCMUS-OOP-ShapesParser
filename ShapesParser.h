@@ -14,7 +14,7 @@
 #include "CircleParser.h"
 #include "SquareParser.h"
 
-#include "ShapesList.h"
+#include "Display.h"
 #include "Exception.h"
 #include "ParserFactory.h"
 #include "ShapeToStringConvert.h"

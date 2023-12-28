@@ -24,3 +24,9 @@ string Square::getShapeType()
 {
     return "Square";
 }
+
+void Square::display() {
+    std::stringstream res;
+    res << "Side=" << _side;
+    std::cout << res.str();
+}
